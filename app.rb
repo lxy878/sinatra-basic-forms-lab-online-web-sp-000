@@ -12,7 +12,7 @@ class App < Sinatra::Base
 
   post '/puppy' do
     puts params.inspect
-    @puppy = Puppy.new(params[:name], params[:breed], params[:age])
+    @puppy = Puppy.new(name:params[:name], breed:params[:breed], age:params[:age])
     # erb :display_puppy
   end
 
