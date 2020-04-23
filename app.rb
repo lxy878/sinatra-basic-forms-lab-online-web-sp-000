@@ -12,7 +12,8 @@ class App < Sinatra::Base
 
   post '/puppy' do
     puts params.inspect
-    erb :display_puppy
+    
+    # erb :display_puppy
   end
 
 end
