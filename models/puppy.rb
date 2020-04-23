@@ -3,4 +3,6 @@ class Puppy
   attr_accessor :name, :breed, :age
   @@all = []
   def initialize(hash={})
+    
+  end
 end
