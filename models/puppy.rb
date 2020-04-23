@@ -3,6 +3,6 @@ class Puppy
   attr_accessor :name, :breed, :age
   @@all = []
   def initialize(hash={})
-    
+    hash.each{|key, value| self.send("#{key}=", value)}
   end
 end
